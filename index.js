@@ -9,5 +9,5 @@ const server = http.createServer((req, res) => {
 
 // Server 3000-portda va barcha tarmoq interfeyslarida tinglaydi
 server.listen(3000, "0.0.0.0", () => {
-  console.log("Serverda juda yaxshi ishlayapti: http://your-public-ip:3000");
+  console.log("Serverda juda yaxshi ishlayaptif: http://your-public-ip:3000");
 });
