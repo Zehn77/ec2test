@@ -1,0 +1,11 @@
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+  res.end("<h1>Salom! Node.js AWS serverda muvaffaqiyatli ishga tushdi!</h1>");
+});
+
+// Server 3000-portda va barcha tarmoq interfeyslarida tinglaydi
+server.listen(3000, "0.0.0.0", () => {
+  console.log("Server ishlayapti: http://your-public-ip:3000");
+});
